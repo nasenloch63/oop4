@@ -4,14 +4,17 @@ import 'cdemy.dart';
 
 void main() {
   var kurs1 = Kurs("Fachinformatiker AE");
+  var kurs2 = Kurs("Fachinformatiker SI");
 
   var teilnehmer1 = Teilnehmer("Yasin Adam", "Aissani", Geschlecht.maennlich, 26);
  
   var teilnehmer2 = Teilnehmer("Maxine", "Huhn", Geschlecht.weiblich, 29);
   
   var teilnehmer3 = Teilnehmer("Manuel", "Perez", Geschlecht.maennlich);
-  var cdemy = Cdemy();
+  var cdemy = Cdemy(); 
   cdemy.kurse.add(kurs1);
+  cdemy.kurse.add(kurs2);
+  
   kurs1.teilnehmer.add(teilnehmer1);
   kurs1.teilnehmer.add(teilnehmer2);
   kurs1.teilnehmer.add(teilnehmer3);
