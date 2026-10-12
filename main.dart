@@ -14,7 +14,8 @@ void main() {
   var cdemy = Cdemy(); 
   cdemy.kurse.add(kurs1);
   cdemy.kurse.add(kurs2);
-  
+  kurs2.teilnehmer.add(teilnehmer1);
+  kurs2.teilnehmer.add(teilnehmer2);
   kurs1.teilnehmer.add(teilnehmer1);
   kurs1.teilnehmer.add(teilnehmer2);
   kurs1.teilnehmer.add(teilnehmer3);
@@ -29,5 +30,8 @@ print("Manuel: ${teilnehmer3.zutrittsberechtigung.nummer}");
 print("Kurs: ${kurs1.name}");
 print("Anzahl Teilnehmer: ${kurs1.teilnehmer.length}");
 
+print("Anzahl Kurse: ${cdemy.kurse.length}");
+print("Teilnehmer Kurs 1: ${kurs1.teilnehmer.length}");
+print("Teilnehmer Kurs 2: ${kurs2.teilnehmer.length}");
 }
 
