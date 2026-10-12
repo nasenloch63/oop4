@@ -1,9 +1,12 @@
+import 'zutrittsberechtigung.dart';
+
 enum Geschlecht {
   maennlich,
   weiblich
 }
 
 class Teilnehmer {
+  final Zutrittsberechtigung zutrittsberechtigung = Zutrittsberechtigung();
     String? vorname;
     String? nachname;
     int? alter;
