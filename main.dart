@@ -1,14 +1,14 @@
 import 'teilnehmer.dart';
 
 void main() {
-  var teilnehmer1 = Teilnehmer("Yasin Adam", "Aissani", 26);
+  var teilnehmer1 = Teilnehmer("Yasin Adam", "Aissani", Geschlecht.maennlich, 26);
  
-  var teilnehmer2 = Teilnehmer("Maxine", "Huhn", 29);
+  var teilnehmer2 = Teilnehmer("Maxine", "Huhn", Geschlecht.weiblich, 29);
   
-  var teilnehmer3 = Teilnehmer("Manuel", "Perez");
+  var teilnehmer3 = Teilnehmer("Manuel", "Perez", Geschlecht.maennlich);
   
-teilnehmer3.vorstellen();
-teilnehmer2.vorstellen();
 teilnehmer1.vorstellen();
+teilnehmer2.vorstellen();
+teilnehmer3.vorstellen();
 }
 
