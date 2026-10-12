@@ -10,6 +10,8 @@ void main() {
   
   var teilnehmer3 = Teilnehmer("Manuel", "Perez", Geschlecht.maennlich);
   kurs1.teilnehmer.add(teilnehmer1);
+  kurs1.teilnehmer.add(teilnehmer2);
+  kurs1.teilnehmer.add(teilnehmer3);
 teilnehmer1.vorstellen();
 teilnehmer2.vorstellen();
 teilnehmer3.vorstellen();
